@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorium Z9 - Hosting Aplikacji</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .exercises {
+            display: grid;
+            gap: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .exercise {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+        
+        .exercise h3 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .exercise p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .status {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        
+        .status-item {
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .warning {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .info {
+            color: #17a2b8;
+            font-weight: bold;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .links {
+            margin-top: 20px;
+        }
+        
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        a:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Laboratorium Z9</h1>
+        <p class="subtitle">Hosting Aplikacji i Wdrażanie na Serwer</p>
+        
+        <div class="exercises">
+            <div class="exercise">
+                <h3>Ćwiczenie 1: Hosting Lokalny</h3>
+                <p>✓ ASP.NET Core na 0.0.0.0:5000 i 192.168.0.102:5000</p>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ćwiczenie 2: WSL2 + Ubuntu</h3>
+                <p>✓ Aplikacja w Ubuntu 22.04 LTS z Nginx reverse proxy (172.29.1.86)</p>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ćwiczenie 3: Cloudflare Tunnel</h3>
+                <p>✓ Public HTTPS: https://episode-dsl-spell-taxi.trycloudflare.com</p>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ćwiczenie 4: Oracle Cloud VPS</h3>
+                <p>⚠ Serwer działa (79.76.102.23), ale brak dostępu z Windows (timeout)</p>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ćwiczenie 5: Azure App Service</h3>
+                <p>⚠ Free Tier niewystarczający (.NET 8.0 timeout na startup)</p>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ćwiczenie 6: Domena i SSL</h3>
+                <p>ℹ Freenom niedostępny od 2022, używamy Cloudflare Tunnel</p>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ćwiczenie 7: GitHub Pages</h3>
+                <p>✓ Ta strona jest hostowana na GitHub Pages!</p>
+            </div>
+        </div>
+        
+        <div class="status">
+            <h3>Status Całkowity</h3>
+            <div class="status-item"><span class="success">✓ 4/7</span> ćwiczeń w pełni działających</div>
+            <div class="status-item"><span class="warning">⚠ 2/7</span> ćwiczeń z problemami (znane ograniczenia)</div>
+            <div class="status-item"><span class="info">ℹ 1/7</span> ćwiczenia z alternatywą (Cloudflare zamiast domeny)</div>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/Paffeueq/Pragramming_desktop_app_and_for_mobile_dev">GitHub Repo</a>
+            <a href="https://episode-dsl-spell-taxi.trycloudflare.com/">Cloudflare Tunnel</a>
+        </div>
+        
+        <footer>
+            <p>Paweł Myszka | 331720 | Laboratorium nr 9 | Hosting Aplikacji</p>
+            <p>Wdrożone: 28.12.2025</p>
+        </footer>
+    </div>
+</body>
+</html>
